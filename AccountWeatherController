@@ -21,7 +21,7 @@ public with sharing class AccountWeatherController {
         account = [SELECT Id, ShippingCity FROM Account WHERE Id =: account.Id];
 
         String accountCity = account.ShippingCity;
-        String apiKey = '5a5945a9e60654f2359a8df875390410';
+        String apiKey = 'your_API_key';
 
         String requestEndpoint = 'https://api.openweathermap.org/data/2.5/weather';
         requestEndpoint += '?q=' + accountCity;
